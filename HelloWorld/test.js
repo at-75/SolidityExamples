@@ -5,7 +5,7 @@ const path = require('path');
 const web3 = new Web3('http://localhost:7545');
 const contractPath = path.resolve(__dirname, 'artifacts/contracts/HelloWorld.sol/HelloWorld.json');
 const { abi } = JSON.parse(fs.readFileSync(contractPath, 'utf8'));
-const contractAddress = '0x2f4c78539030412472A7077479929787878F2a9c';
+const contractAddress = '0x891166D10627F85204F7a61c6376afEE86eb6Ac6';
 const helloContract = new web3.eth.Contract(abi, contractAddress);
 
 async function test(){
